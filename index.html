@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <link rel="icon" href="favicon.ico">
+  <title>SeismicEngineer</title>
+</head>
+
+<body>
+  <style>
+  body {
+      background-image: url('https://i2.gazetevatan.com/i/gazetevatan/75/0x410/622f3ae5ed13441560e2022d.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+  }
+
+  @media (min-width: 1600px) {
+      .container {
+          max-width: 1600px;
+      }
+  }
+  </style>
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">EQIYI</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">What is SHM?</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Why SHM?</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          Contact Us
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">osmankayi06@gmail.com</a></li>
+                          <li><a class="dropdown-item" href="#">+90 531 341 1110</a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="#">https://www.linkedin.com/in/osman-kayi-0761aa173/</a>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+              <form class="d-flex">
+                  <input class="form-control form-control-sm me-2" type="search" placeholder="Search"
+                      aria-label="Search">
+                  <button class="btn btn-sm btn-info my-2 my-sm-0" type="submit">Search</button>
+              </form>
+          </div>
+      </div>
+  </nav>
+
+  <div class="container">
+      <br>
+      <h1>Structural Health Monitoring(SHM)</h1>
+      <div class="row">
+          <div class="col">
+              <div class="card mb-3">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMsAAAD5CAMAAAC+lzGnAAAAgVBMVEUAAAD///+ysrKurq6zs7OpqamlpaX8/PwEBAScnJyhoaGqqqrt7e3x8fHq6uqjo6MpKSkzMzMhISFRUVHExMQ6Ojo/Pz8ZGRkuLi4SEhKDg4O9vb1ZWVnf39/Dw8PR0dGWlpZubm5kZGRJSUl9fX2NjY1UVFTNzc1ycnIkJCQ9PT00DyogAAAD70lEQVR4nO2daVPqMBRAk+eSooClCpRdRET9/z/wNd2oLEkZqiTMOR+cCM2de7ghTSpUIQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4CjBGV1/9j0j0vms22qSN0dvZ0UadzsT+1G/yFQmbNLms5Kz1an93+eTadZ61pFeGk3uRO51BnKpmwuppHw9rftM9+6nzVYa6bzSnkfmcqObk6Sh5N0pvWdJByVbabu1jXQhKi5rXRcp/9XvPMt6VF1O6N04FZe+TAsjb+v27WYqspf+5pSL2MjMpt44GXVlxjr73S2XoJ261JP56uRVKd5gbrmIYSd/qR+t57ywOLQckU65JGfwnqo5zGKVV2VenuqdctGs8lc7GTmmygyKqmy2j7nmEogPWaMyHzKvyqLyoGsuCcs8TYPMsvCtqjjoEoixrTLjoiqzH8ti91yS7NZFZfaXMzr118K1K1x3SdIrs33aPTpJ/aaYHdo7k4OLLuWDe5XRyU9KlWhnG+aoi7jNhpnS+5FtwkG+xtfPdKLdSG66BMXLnyxn2tXdWXlakSreO/+46aKZFBNA5bnX0kQN9iO56hJs3xjJYuVRbxyjdbvUU6sDqwJXXTQvZepSdjrl6NJ2z4ciueySyFTSr4jJ6cG1mtMuPypTsTpyecJtl3yjuePydmQF7bhLuaPfTmDy89i1yYeLu9wZXaKdQaaSzf2xfY3rLmK5U5XX41s0513E/EdVTBcC3XcR1cIsjh/mgUsg/lVc9taTVTxwmW6nsntjJOddxHaQKXNZvHBZFDIz8wVAH1zuCpeWOZIPLuPCZWmO5INLeSmzZ47kg0tQuFgul/vgIoptmCWSFy6Lq3EJyp3/0BzJA5ftpPxljuSFyzp3MZ/2/XB5v6Ix9pm7jMyRXHExZjCtN489+eAyuCKX3hW5xFfkEl6Ry9AvF+OcnC+UlSVS5lL7Q06/QA0XcX0utjF2j0uDNDfGcGmSxxozKS5/T32XjiUSLk1yU8Mlu9DftkTyyaVriYRLkzTncodLg+ByCFyapI5LB5c/B5dD4NIk9V1mlkg+uRg/pCRwaZY6Lt1aLo9euGR/SJ5bIrngolco5i8hD6RSSr5bI0lrpN+llbpMTYdkX7uyfps9i3TJ74mLtj3PQEwna/stE/QUsbEc87sMH+bjZiJFNxvDR37/jOYyuLwLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABNmPoGz7TKxvYZz+g6z40qmcTTQKQxEOw+irN4ott2Z2nX4UDsLVIFqFvefIcmtm1+nHq168+g6+497J/8TcNeLh9yrsx0EchvHAclt2AAD4e/4DJw8moBrJLJsAAAAASUVORK5CYII="
+                      class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">EQIYI</h5>
+                      <p class="card-text">EQIYI is a company which is dealing with the structural health monitoring
+                          in all over the world. It was set up by Osman KAYI who is a Civil Engineer with a PhD and
+                          Nuri AKMAN who is a master of database and web design in 2026. </p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Vision</li>
+                      <li class="list-group-item">Mission</li>
+                      <li class="list-group-item">Products</li>
+                  </ul>
+                  <div class="card-body">
+                      <a href="https://github.com/OsmanKAYI" class="card-link">Osman KAYI</a>
+                      <a href="https://github.com/nuriakman" class="card-link">Nuri AKMAN</a>
+                  </div>
+              </div>
+              <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                  <label class="form-check-label" for="flexSwitchCheckDefault">Send me notification email</label>
+              </div>
+              <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                  <label class="form-check-label" for="flexSwitchCheckChecked">I agree the terms</label>
+              </div>
+              <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDisabled" disabled>
+                  <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+              </div>
+              <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDisabled"
+                      checked disabled>
+                  <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch
+                      checkbox input</label>
+              </div>
+          </div>
+          <div class="col-6">
+              <div class="alert alert-success" role="alert">
+                  What do you know about how dangerous the fault lines which covers almost all over the Turkey? The
+                  below figures show some bad experiences from past.
+              </div>
+              <div id="carouselExampleIndicators" class="carousel slide mb-3" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                          class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                          aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                          aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                          aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                          aria-label="Slide 5"></button>
+                  </div>
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <img src="https://avatars.githubusercontent.com/u/98597219?s=400&u=834a95f6234a61d2d284f3b801b72854ed331608&v=4"
+                              class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="https://avatars.githubusercontent.com/u/60007?v=4" class="d-block w-100"
+                              alt="...">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="https://pbs.twimg.com/profile_images/1233890466451640320/CXgTnPoW_400x400.jpg"
+                              class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="https://pbs.twimg.com/profile_images/1320463302321987591/_8F_27Ft_400x400.jpg"
+                              class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="https://pbs.twimg.com/media/EYzDXa6WkAAFyz5?format=jpg&name=medium"
+                              class="d-block w-100" alt="...">
+                      </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                  </button>
+              </div>
+              <div class="card mb-3">
+                  <div class="card-header">
+                      <h2>What We Have To Do</h2>
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">The list of actions to decrease the tremendous effects of earthquake are
+                          as follows:</h5>
+                      <p class="card-text">
+                      <ul class="card-text">
+                          <li class="card-text">Determine the risk heritage of country</li>
+                          <li class="card-text">Examine the high risk building stock</li>
+                          <li class="card-text">Rehabilate those buildings</li>
+                          <li class="card-text">Educate people</li>
+                          <li class="card-text">Have an emergency plan</li>
+                      </ul>
+                      </p>
+                      <a href="https://www.cdc.gov/disasters/earthquakes/during.html" class="btn btn-primary">To learn
+                          more</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col">
+              <div id="carouselExampleDark" class="carousel carousel-dark slide mb-3" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                          aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                          aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                          aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                          <img src="https://pbs.twimg.com/profile_images/1233890466451640320/CXgTnPoW_400x400.jpg"
+                              class="d-block w-100" alt="...">
+                          <div class="carousel-caption d-none d-md-block">
+                              <p>Some representative placeholder content for the first slide.</p>
+                          </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                          <img src="https://pbs.twimg.com/profile_images/1233890466451640320/CXgTnPoW_400x400.jpg"
+                              class="d-block w-100" alt="...">
+                          <div class="carousel-caption d-none d-md-block">
+                              <p>Some representative placeholder content for the second slide.</p>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <img src="https://pbs.twimg.com/profile_images/1233890466451640320/CXgTnPoW_400x400.jpg"
+                              class="d-block w-100" alt="...">
+                          <div class="carousel-caption d-none d-md-block">
+                              <p>Some representative placeholder content for the third slide.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                      data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                      data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                  </button>
+              </div>
+              <div class="card mb-3">
+                  <div class="card-header">
+                      <h2>What We Supply as a EQIYI</h2>
+                  </div>
+                  <div class="card-body">
+                      <p class="card-text">
+                      <ul class="card-text">
+                          <li class="card-text">Applying an improved SHM</li>
+                          <li class="card-text">Determination of high risk buildings</li>
+                          <li class="card-text">Creating an early warning system</li>
+                          <li class="card-text">Sending simultaneous signals to the responsibles</li>
+                      </ul>
+                      </p>
+                      <a href="https://www.environmental-expert.com/companies/keyword-structural-health-monitoring-81500"
+                          class="btn btn-primary">To learn more</a>
+                  </div>
+              </div>
+              <div class="card mb-3">
+                  <div class="card-header">
+                      <h2>What We Use</h2>
+                      <div class="list-group">
+                          <button type="button" class="list-group-item list-group-item-action active"
+                              aria-current="true">
+                              Each is our company's product
+                          </button>
+                          <button type="button" class="list-group-item list-group-item-action">Accelerometers</button>
+                          <button type="button" class="list-group-item list-group-item-action">Displacement
+                              Sensors</button>
+                          <button type="button" class="list-group-item list-group-item-action">Thermal
+                              Sensors</button>
+                          <button type="button" class="list-group-item list-group-item-action" disabled>Each one above
+                              individually in high technology</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card mb-3">
+                      <div class="card-header">
+                          <h2>How We Motivate Ourselves</h2>
+                      </div>
+                      <div class="card-body">
+                          <p class="card-text">We believe that high amount of life loss because of the earthquake can
+                              be reduced by using some new and high technology techniques.</p>
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              Our Motto Is
+                          </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">PLEASE NOTE DOWN</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                          Earthquake does not kill, building does!
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+              integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+              crossorigin="anonymous"></script>
+
+</body>
+
+</html>
